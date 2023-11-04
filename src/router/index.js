@@ -28,6 +28,8 @@ const routes = [
     meta: { layout: "empty" },
     component: () => import("@/views/Creating-ads.vue"),
   },
+
+ 
 ];
 
 const router = createRouter({

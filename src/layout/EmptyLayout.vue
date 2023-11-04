@@ -1,30 +1,29 @@
 <template>
-  <section class="vh-100">
-    
-    <div class="container py-6 h-100">
+  <div
+    class="bg-image"
+    style="
+      background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+    "
+  >
+    <div class="container">
       <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col col-md-6">
-          <div class="card">
-            <div class="card-body p-3 p-lg-3 text-black">
+        <div class="col-md-5">
+          <div class="card mt-4 mb-2">
+            <div class="card-body p-md-1 text-black">
               <router-view></router-view>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <style>
-.img-fluid {
-  border-radius: 1rem;
-}
-.card {
-  border-radius:2rem;
-  height: 250px
-}
-
-.vh-100 {
-  background-color: #cfd6e5;
+.bg-image {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

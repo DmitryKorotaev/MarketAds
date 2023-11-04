@@ -1,47 +1,40 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Главная</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit">Разместить объявление</button>
-      </form>
+  <nav class="navbar navbar-dark bg-dark justify-content-between">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img src="img/8UEdOr9L78U.jpg" alt="Market Ads" width="90" height="40"></a>
+      <div class="indent">
+        <router-link to="/Login" class="text-decoration-none link-light"
+          >Вход и регистрация</router-link
+        >
+        <router-link to="/Creating-ads" class="text-decoration-none link-light"
+          >Разместить объявление</router-link
+        >
+      </div>
     </div>
-  </div>
-</nav>
-
-  
+  </nav>
 </template>
 
 <script>
- export default {
-
- }
+export default {};
 </script>
 
-<style ></style>
+<style>
+.indent a {
+  line-height: 1em;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px;
+  margin: 2px;
+}
+.indent a:hover {
+  color: #7fb7c0 !important;
+}
+
+.container-fluid {
+  margin-top: -7px;
+  max-width: 95% !important;
+}
+.navbar {
+  min-width: 900px;
+}
+</style>
